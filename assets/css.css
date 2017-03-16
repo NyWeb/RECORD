@@ -1,0 +1,171 @@
+/*
+
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+@font-face {
+    font-family: 'awesome';
+    src: url('awesome.eot');
+    src: url('awesome.eot?#iefix') format('embedded-opentype'), url('awesome.woff') format('woff'), url('awesome.ttf')  format('truetype'), url('awesome.svg#svgFontName') format('svg');
+}
+
+a {
+    text-decoration: none;
+}
+
+/*
+
+*/
+
+#wrapper {
+    width: 100%;
+}
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 60px;
+    right: 0;
+    height: 60px;
+    background: #fff;
+}
+
+#vanster, #hoger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    overflow: scroll;
+    z-index: 1;
+}
+
+#innehall {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+#hoger {
+    left: auto;
+    right: 0;
+}
+
+/*
+
+*/
+
+#header img {
+    float: left;
+    margin: 5px 20px;
+    height: 40px;
+}
+
+#header span {
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+    line-height: 20px;
+}
+
+#vanster ul, #hoger ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#vanster ul li a, #hoger ul li a {
+    display: block;
+    height: 60px;
+    width: 60px;
+    background: #fff;
+    line-height: 60px;
+    text-align: center;
+    font-family: "awesome";
+    color: #555;
+    font-size: 25px;
+}
+
+#vanster ul li a:before, #hoger ul li a:before {
+    display: block;
+}
+
+#vanster ul li a.arm {
+    background: #000;
+    color: #fff;
+}
+
+#vanster ul li a.play:before {
+    content: "\f1d8";
+}
+
+#vanster ul li a.pause:before {
+    content: "\f015";
+}
+
+#vanster ul li a.speed-45:before {
+    content: "\f03e";
+}
+
+#vanster ul li a.speed-33:before {
+    content: "\f121";
+}
+
+#hoger ul li a.tune-up:before {
+    content: "\f071";
+}
+
+#hoger ul li a.tune-down:before {
+    content: "\f1eb";
+}
+
+#vanster ul li a:hover, #hoger ul li a:hover {
+    color: #090;
+}
+
+#vanster ul li a:active, #hoger ul li a:active {
+    color: #0c0;
+}
+
+#vanster ul li a.active, #hoger ul li a.active, .arm #vanster ul li a.arm {
+    color: #900;
+}
+
+#innehall .left, #innehall .right {
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#innehall .right {
+    left: 50%;
+}
+
+/*
+
+*/
+
+body.ipho:after {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    background-image: url(rotate.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: 2;
+}

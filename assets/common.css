@@ -1,0 +1,1115 @@
+/**
+ * Standardize css
+ * @version		$Id: common.css 0 2013-02-28 00:39:51GMT
+ * @package		NyWeb-system
+ * @author		MÃ¥rten Wetterberg marten.wetterberg@nyweb.nu
+ * @copyright	Copyright (C) 2009 - 2013 NyWeb AB. All rights reserved.
+ */
+
+/*
+Start generic tags
+*/
+
+body {
+    font-family: Calibri, Helvetica, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #222;
+    text-align: left;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+body.contentpane {
+    background: #fff;
+}
+
+html {
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+a, a:visited, a:link, a:active, a:hover {
+    text-decoration: none;
+}
+
+a img {
+    border: none;
+}
+
+/*
+End generic tags. Start form tags
+*/
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+    -webkit-appearance: none;
+    color: #444;
+    text-shadow: 0px 1px 1px #ccc;
+    font-size: 14px;
+    box-shadow: inset 0px 0px 100px #fff;
+    background: #fff;
+    line-height: 25px;
+    height: 25px;
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: 1px solid #bbb;
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    clear: both;
+}
+
+textarea {
+    height: auto;
+    padding-top: 5px;
+    line-height: 100%;
+}
+
+input[type="submit"], input[type="button"], a.button, button {
+    -webkit-appearance: none;
+    border: none;
+    border-radius: 3px;
+    line-height: 25px;
+    height: 25px;
+    margin: 0;
+    padding: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    float: left;
+    display: block;
+    clear: both;
+    vertical-align: middle;
+    cursor: pointer;
+    text-align: center;
+    background: none;
+}
+
+/*
+End form tags. Start JCE
+*/
+
+body.mceContentBody {
+    height: auto;
+}
+
+/*
+End JCE. Start system message
+*/
+
+#system-message {
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+#system-message dt {
+    font-weight: bold;
+    display: none;
+}
+
+#system-message dd {
+    margin: 0;
+    font-weight: bold;
+    text-indent: 30px;
+}
+
+#system-message dd ul {
+    list-style: none;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 3px solid #fff;
+    background: #eee;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px #000;
+}
+
+#system-message dd ul li {
+    line-height: 1.5em;
+}
+
+#system-message dd.error ul {
+    color: #f00;
+}
+
+#system-message dd.warning ul {
+    color: #aa0;
+}
+
+/*
+End system message. Start pagination
+*/
+
+.pagination ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    position: relative;
+    display: block;
+    clear: both;
+}
+
+.pagination ul li {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.pagination ul li.pagination-start, .pagination ul li.pagination-prev, .pagination ul li.pagination-next, .pagination ul li.pagination-end {
+    display: block;
+    position: absolute;
+    top: 0px;
+    padding-left: 0px;
+}
+
+.pagination ul li a {
+    text-decoration: none;
+}
+
+.pagination ul li.pagination-start {
+    left: 0px;
+}
+
+.pagination ul li.pagination-prev {
+    left: 50px;
+}
+
+.pagination ul li.pagination-next {
+    right: 50px;
+}
+
+.pagination ul li.pagination-end {
+    right: 0px;
+}
+
+/*
+End pagination. Start tooltip
+*/
+
+.tip-wrap {
+    min-height: 70px;
+    color: white;
+    width: 100px;
+    background: #222;
+    border-radius: 15px;
+    border: 2px solid white;
+    -moz-box-shadow: 0px 0px 5px black;
+    -webkit-box-shadow: 0px 0px 5px black;
+    box-shadow: 0px 0px 5px black;
+    padding: 10px;
+    z-index: 99;
+}
+
+.tip-title {
+    font-size: 16px;
+}
+
+/*
+End tooltip. NyWeb-system
+*/
+
+.edit-icon {
+    display: none !important;
+}
+
+a.live-edit {
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    z-index: 999;
+}
+
+/*
+End NyWeb-system. Start responsive
+*/
+
+/*iMac < infinity*/
+body.imac {
+
+}
+
+/*MacBook Pro < 1600*/
+body.ipro {
+
+}
+
+/*MacBook Air < 1440*/
+body.iair {
+
+}
+
+/*iPad < 1280*/
+body.ipad {
+
+}
+
+/*iPad Mini < 1024*/
+
+/*Clear and un-float*/
+body.imin #sidhuvud,
+body.imin #content,
+body.imin #phocamaps-box div.pmbox-grey {
+    float: none;
+    clear: both;
+}
+
+/*Full-width*/
+body.imin #sidhuvud,
+body.imin #content,
+body.imin #phocaMaps,
+body.imin #sidfotholder,
+body.imin #sidfot {
+    width: 100%;
+}
+
+/*Un-height*/
+body.imin #sidhuvud {
+    height: auto;
+}
+
+/*Force background*/
+body.imin #sidfotholder,
+body.imin #sidfot {
+    overflow: hidden;
+}
+
+/*Un-pad*/
+body.imin #vanster,
+body.imin #innehall,
+body.imin #hoger,
+body.imin #sidfot {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+/*Device-width and center*/
+body.imin #headerinner,
+body.imin #wrapper {
+    width: 800px;
+    margin: 0 auto;
+}
+
+/*Force-correct*/
+body.imin #sidhuvud img,
+body.imin #vanster iframe,
+body.imin .fb-like-box.fb_iframe_widget,
+body.imin .fb-like-box.fb_iframe_widget span,
+body.imin .fb-like-box.fb_iframe_widget iframe,
+body.imin #phocaMap,
+body.imin #hoger iframe {
+    max-width: 100%;
+    width: auto !important;
+    box-sizing: border-box;
+}
+
+body.imin #header img,
+body.imin #sidhuvud img,
+body.imin #vanster img,
+body.imin #innehall img,
+body.imin #hoger img {
+    max-width: 100%;
+    height: auto !important;
+}
+
+body.imin #meny {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+body.imin #vanster, body.imin #hoger {
+    width: 17%;
+    padding: 0.5%;
+}
+
+body.imin #innehall {
+    width: 98%;
+    padding: 1%;
+}
+
+body.imin #sidhuvud div.slideshow, body.imin #sidhuvud div.gallery,
+body.imin #innehall div.slideshow, body.imin #innehall div.gallery {
+    max-width: 100%;
+    height: auto !important;
+    min-height: 236px;
+}
+
+body.imin #innehall.ii, body.imin #innehall.il {
+    width: 80%;
+}
+
+body.imin #innehall.iii, body.imin #innehall.iil {
+    width: 62%;
+}
+
+body.imin #sidfot .innermodule {
+    padding: 10px;
+}
+
+/*iPod Touch @ < 800*/
+/*Reset width and height*/
+body.ipod #headerholder,
+body.ipod #headerinner,
+body.ipod #header,
+body.ipod #meny,
+body.ipod #meny ul li a,
+body.ipod #meny ul li span,
+body.ipod #sidhuvud .slideshow .bottom,
+body.ipod #sidhuvud div.slideshow .bottom h3,
+body.ipod #sidhuvud div.slideshow .bottom p,
+body.ipod #innehall .slideshow .bottom,
+body.ipod #innehall div.slideshow .bottom h3,
+body.ipod #innehall div.slideshow .bottom p,
+body.ipod #vanster,
+body.ipod #hoger,
+body.ipod #innehall {
+    width: auto;
+    height: auto;
+    min-width: 0;
+    min-height: 0;
+    max-width: none;
+    max-height: none;
+}
+
+/*Clear and un-float*/
+body.ipod #header,
+body.ipod #meny,
+body.ipod #meny .moduletable,
+body.ipod #meny ul,
+body.ipod #meny ul li,
+body.ipod #sidhuvud,
+body.ipod #content,
+body.ipod #vanster,
+body.ipod #innehall,
+body.ipod #phocamaps-box div.pmbox-grey,
+body.ipod .cols-2 > .item,
+body.ipod .cols-3 > .item,
+body.ipod .cols-4 > .item,
+body.ipod .cols-5 > .item,
+body.ipod #hoger,
+body.ipod #sidfot {
+    float: none;
+    clear: both;
+}
+
+/*Full-width*/
+body.ipod #header,
+body.ipod #meny,
+body.ipod #meny ul,
+body.ipod #sidhuvud,
+body.ipod #content,
+body.ipod #hoger,
+body.ipod #innehall,
+body.ipod #vanster,
+body.ipod #phocaMaps,
+body.ipod .cols-2 > .item,
+body.ipod .cols-3 > .item,
+body.ipod .cols-4 > .item,
+body.ipod .cols-5 > .item,
+body.ipod #sidfotholder {
+    width: 100%;
+}
+
+/*Un-absolute*/
+body.ipod #headerholder,
+body.ipod #sidhuvud .slideshow .bottom,
+body.ipod #innehall .slideshow .bottom {
+    position: relative;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+}
+
+/*Un-height*/
+body.ipod #headerholder,
+body.ipod #headerinner,
+body.ipod #wrapper,
+body.ipod #header,
+body.ipod #meny,
+body.ipod #meny ul li {
+    height: auto;
+}
+
+/*Force background*/
+body.ipod #headerholder,
+body.ipod #sidfotholder,
+body.ipod #sidfot {
+    overflow: hidden;
+}
+
+/*Un-pad and un-margin*/
+body.ipod #headerholder,
+body.ipod #header,
+body.ipod #meny,
+body.ipod #meny .moduletable,
+body.ipod #meny ul,
+body.ipod #meny ul li,
+body.ipod #meny ul li a,
+body.ipod #meny ul li span,
+body.ipod #sidhuvud,
+body.ipod #sidhuvud div.slideshow .bottom,
+body.ipod #sidhuvud div.slideshow .bottom h3,
+body.ipod #sidhuvud div.slideshow .bottom p,
+body.ipod #innehall div.slideshow .bottom,
+body.ipod #innehall div.slideshow .bottom h3,
+body.ipod #innehall div.slideshow .bottom p,
+body.ipod #content,
+body.ipod #vanster,
+body.ipod #innehall,
+body.ipod .cols-2 > .item,
+body.ipod .cols-3 > .item,
+body.ipod .cols-4 > .item,
+body.ipod .cols-5 > .item,
+body.ipod #hoger {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+/*Device-width and center*/
+body.ipod #headerinner,
+body.ipod #wrapper {
+    width: 640px;
+    margin: 0 auto;
+}
+
+/*Center*/
+body.ipod #header {
+    text-align: center;
+}
+
+/*Force-correct*/
+body.ipod #header img,
+body.ipod #sidhuvud img,
+body.ipod #vanster iframe,
+body.ipod .fb-like-box.fb_iframe_widget,
+body.ipod .fb-like-box.fb_iframe_widget span,
+body.ipod .fb-like-box.fb_iframe_widget iframe,
+body.ipod #phocaMap,
+body.ipod #innehall img,
+body.ipod #hoger iframe {
+    max-width: 100%;
+    width: auto !important;
+    box-sizing: border-box;
+}
+
+body.ipod #header img,
+body.ipod #innehall img,
+body.ipod #sidhuvud img {
+    height: auto !important;
+}
+
+/*Hold off down*/
+body.ipod .cols-2 > .item,
+body.ipod .cols-3 > .item,
+body.ipod .cols-4 > .item,
+body.ipod .cols-5 > .item {
+    margin-bottom: 20px;
+}
+
+/*Pad a bit*/
+body.ipod #meny ul li a,
+body.ipod #meny ul li span,
+body.ipod #sidhuvud div.slideshow .bottom h3,
+body.ipod #sidhuvud div.slideshow .bottom p,
+body.ipod #innehall div.slideshow .bottom h3,
+body.ipod #innehall div.slideshow .bottom p {
+    padding: 10px;
+}
+
+body.ipod #meny ul li a,
+body.ipod #meny ul li span {
+    line-height: 100%;
+}
+
+body.ipod #sidhuvud div.slideshow, body.ipod #sidhuvud div.gallery,
+body.ipod #innehall div.slideshow, body.ipod #innehall div.gallery {
+    max-width: 100%;
+    height: auto !important;
+    min-height: 250px;
+}
+
+/*iPhone @ < 640*/
+/*Reset width and height*/
+body.ipho #headerholder,
+body.ipho #headerinner,
+body.ipho #header,
+body.ipho #wrapper,
+body.ipho #meny,
+body.ipho #meny ul li a,
+body.ipho #meny ul li span,
+body.ipho #sidhuvud .slideshow .bottom,
+body.ipho #sidhuvud div.slideshow .bottom h3,
+body.ipho #sidhuvud div.slideshow .bottom p,
+body.ipho #innehall .slideshow .bottom,
+body.ipho #innehall div.slideshow .bottom h3,
+body.ipho #innehall div.slideshow .bottom p,
+body.ipho #vanster,
+body.ipho #hoger,
+body.ipho #innehall,
+body.ipho #sidfotholder,
+body.ipho #sidfot,
+body.ipho #sidfot .moduletable {
+    width: auto;
+    height: auto;
+    min-width: 0;
+    min-height: 0;
+    max-width: none;
+    max-height: none;
+}
+
+/*Clear and un-float*/
+body.ipho #header,
+body.ipho #meny,
+body.ipho #meny .moduletable,
+body.ipho #meny ul,
+body.ipho #meny ul li,
+body.ipho #sidhuvud,
+body.ipho #content,
+body.ipho #vanster,
+body.ipho #innehall,
+body.ipho #phocamaps-box div.pmbox-grey,
+body.ipho .cols-2 > .item,
+body.ipho .cols-3 > .item,
+body.ipho .cols-4 > .item,
+body.ipho .cols-5 > .item,
+body.ipho #hoger,
+body.ipho #sidfotholder,
+body.ipho #sidfot .moduletable {
+    float: none;
+    clear: both;
+}
+
+/*Full-width*/
+body.ipho #header,
+body.ipho #meny,
+body.ipho #meny ul,
+body.ipho #sidhuvud,
+body.ipho #content,
+body.ipho #hoger,
+body.ipho #innehall,
+body.ipho #vanster,
+body.ipho #phocaMaps,
+body.ipho .cols-2 > .item,
+body.ipho .cols-3 > .item,
+body.ipho .cols-4 > .item,
+body.ipho .cols-5 > .item {
+    width: 100%;
+}
+
+/*Un-absolute*/
+body.ipho #headerholder,
+body.ipho #sidhuvud .slideshow .bottom,
+body.ipho #innehall .slideshow .bottom {
+    position: relative;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+
+}
+
+/*Un-height*/
+body.ipho #headerholder,
+body.ipho #headerinner,
+body.ipho #wrapper,
+body.ipho #header,
+body.ipho #meny,
+body.ipho #meny ul li,
+body.ipho #sidfotholder {
+    height: auto;
+}
+
+/*Force background*/
+body.ipho #headerholder {
+    overflow: hidden;
+}
+
+/*Un-pad*/
+body.ipho #headerholder,
+body.ipho #wrapper,
+body.ipho #header,
+body.ipho #meny,
+body.ipho #meny .moduletable,
+body.ipho #meny ul,
+body.ipho #meny ul li,
+body.ipho #meny ul li a,
+body.ipho #meny ul li span,
+body.ipho #sidhuvud,
+body.ipho #sidhuvud div.slideshow .bottom,
+body.ipho #sidhuvud div.slideshow .bottom h3,
+body.ipho #sidhuvud div.slideshow .bottom p,
+body.ipho #innehall div.slideshow .bottom,
+body.ipho #innehall div.slideshow .bottom h3,
+body.ipho #innehall div.slideshow .bottom p,
+body.ipho #content,
+body.ipho #vanster,
+body.ipho #innehall,
+body.ipho .cols-2 > .item,
+body.ipho .cols-3 > .item,
+body.ipho .cols-4 > .item,
+body.ipho .cols-5 > .item,
+body.ipho #hoger,
+body.ipho #sidfotholder,
+body.ipho #sidfot {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+/*Device-width and center*/
+body.ipho #headerinner,
+body.ipho #wrapper {
+    width: 320px;
+    margin: 0 auto;
+}
+
+/*Hide*/
+body.ipho .no-iphone,
+body.ipho .zoom {
+    display: none;
+}
+
+body.ipho .carousel {
+    zoom: 0.5;
+    max-width: 100%;
+}
+
+/*Center*/
+body.ipho #header,
+body.ipho .center-iphone,
+body.ipho #meny .bot {
+    text-align: center;
+}
+
+/*Force-correct*/
+body.ipho #header img,
+body.ipho #sidhuvud img,
+body.ipho #vanster iframe,
+body.ipho .fb-like-box.fb_iframe_widget,
+body.ipho .fb-like-box.fb_iframe_widget span,
+body.ipho .fb-like-box.fb_iframe_widget iframe,
+body.ipho #phocaMap,
+body.ipho #innehall img,
+body.ipho #hoger iframe,
+body.ipho #sidfot img {
+    max-width: 100%;
+    width: auto !important;
+    box-sizing: border-box;
+}
+
+body.ipho #header img,
+body.ipho #innehall img,
+body.ipho #sidhuvud img,
+body.ipho #sidfot img {
+    height: auto !important;
+}
+
+/*Hold off down*/
+body.ipho .cols-2 > .item,
+body.ipho .cols-3 > .item,
+body.ipho .cols-4 > .item,
+body.ipho .cols-5 > .item {
+    margin-bottom: 20px;
+}
+
+/*Pad a bit*/
+body.ipho #meny ul li a,
+body.ipho #meny ul li span,
+body.ipho #sidhuvud div.slideshow .bottom h3,
+body.ipho #sidhuvud div.slideshow .bottom p,
+body.ipho #innehall div.slideshow .bottom h3,
+body.ipho #innehall div.slideshow .bottom p,
+body.ipho #sidfot .moduletable {
+    padding: 10px;
+}
+
+body.ipho #meny ul li a,
+body.ipho #meny ul li span {
+    line-height: 100%;
+}
+
+body.ipho #sidhuvud div.slideshow, body.ipho #sidhuvud div.gallery,
+body.ipho #innehall div.slideshow, body.ipho #innehall div.gallery {
+    max-width: 100%;
+    height: auto !important;
+    min-height: 130px;
+}
+
+body.ipho #push {
+    height: 0px;
+}
+
+/*
+End responsive. Start module-specifics
+*/
+
+#bg {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    min-height: 100%;
+    z-index: -1;
+}
+
+#wrapper {
+    height: auto !important;
+    height: 100%;
+    min-height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#headerholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#headerinner {
+    margin: 0 auto;
+}
+
+#header, #meny, #sidhuvud, #content, #sidfot {
+    width: 100%;
+    display: block;
+    float: left;
+    clear: both;
+}
+
+#vanster {
+    float: left;
+}
+
+#innehall {
+    float: left;
+}
+
+#hoger {
+    float: right;
+}
+
+#push {
+    clear: both;
+}
+
+#sidfotholder {
+    overflow: hidden;
+    position: relative;
+    clear: both;
+}
+
+#sidfotholder #sidfot {
+    margin: 0 auto;
+}
+
+#sidfot {
+    float: none;
+    overflow: hidden;
+    position: relative;
+}
+
+#meny ul, #vanster ul, #hoger ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+#meny ul li {
+    float: left;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+#meny ul li a,
+#meny ul li span {
+    display: block;
+}
+
+#vanster .moduletable, #hoger .moduletable, #header .moduletable, #sidhuvud .moduletable, #sidfot .moduletable, #meny .moduletable, #innehall {
+    position: relative;
+}
+
+#vanster .moduletable, #hoger .moduletable {
+    margin-bottom: 20px;
+    clear: both;
+    overflow: hidden;
+}
+
+#vanster h3, #hoger h3 {
+    display: block;
+    margin-bottom: 0;
+}
+
+#vanster ul li, #hoger ul li {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+#vanster ul li a, #hoger ul li a {
+    display: block;
+}
+
+#vanster ul li h4, #hoger ul li h4 {
+    margin-bottom: auto;
+    font-size: inherit;
+}
+
+/*
+End module-specific. Start component-specific
+*/
+
+/*com_content*/
+.article_separator {
+    display: none;
+}
+
+.items-leading div, .row-separator {
+    clear: both;
+}
+
+.items-leading div div {
+    clear: inherit;
+}
+
+.items-row {
+    clear: both;
+}
+
+.cols-2 > .item,
+.cols-3 > .item,
+.cols-4 > .item,
+.cols-5 > .item,
+.cols-6 > .item,
+.cols-7 > .item {
+    padding: 2%;
+    float: left;
+    overflow: hidden;
+}
+
+.cols-2 > .item {
+    width: 46%;
+}
+
+.cols-3 > .item {
+    width: 29.3%
+}
+
+.cols-4 > .item {
+    width: 21%;
+}
+
+.cols-5 > .item {
+    width: 16%;
+}
+
+.cols-6 > .item {
+    width: 12.6%;
+}
+
+.cols-7 > .item {
+    width: 10.2%;
+}
+
+.items-row .item img {
+    max-width: 100%;
+    height: auto !important;
+}
+
+.item-separator {
+    display: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 1px;
+    background: #ccc;
+    width: 100%;
+    clear: both;
+}
+
+dl.article-info {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+dl.article-info dt {
+    float: left;
+    font-weight: bold;
+}
+
+dl.article-info dd {
+    float: left;
+    margin: 0px;
+    margin-left: 5px;
+    padding: 0px;
+    padding-left: 10px;
+    border-left: 1px solid #000;
+}
+
+/*plg_social*/
+div.fb_iframe_widget, iframe.twitter-share-button, a.disqus-count {
+    margin-right: 10px;
+    float: left;
+    min-height: 0px;
+}
+
+#disqus_thread {
+    margin-top: 20px;
+}
+
+a.disqus-count {
+    display: block;
+    height: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    line-height: 20px;
+}
+
+/*com_phocamaps*/
+div[style="text-align: right; color: rgb(211, 211, 211); clear: both; margin-top: 10px;margin-bottom:10px;"] {
+    display: none;
+}
+
+/*com_user*/
+.profile-edit form dl, .profile-edit form dt, .profile-edit form dd {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.profile-edit form dt {
+    margin-top: 20px;
+}
+
+/**/
+body.ipho #meny ul.app-style, body.ipod #meny ul.app-style, body.ipho #header ul.app-style, body.ipod #header ul.app-style, body.ipho #vanster ul.app-style, body.ipod #vanster ul.app-style {
+    width: 40px;
+    padding: 0;
+    margin: 0;
+    height: 0;
+    padding-top: 6px;
+    border-radius: 3px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    background: rgba(0, 0, 0, .2);
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index: 9;
+}
+
+body.ipod #meny ul.app-style:before, body.ipho #meny ul.app-style:before, body.ipod #meny ul.app-style:after, body.ipho #meny ul.app-style:after, body.ipod #header ul.app-style:before, body.ipho #header ul.app-style:before, body.ipod #header ul.app-style:after, body.ipho #header ul.app-style:after, body.ipod #vanster ul.app-style:before, body.ipho #vanster ul.app-style:before, body.ipod #vanster ul.app-style:after, body.ipho #vanster ul.app-style:after {
+    content: "";
+    width: 40px;
+    height: 6px;
+    top: -15px;
+    right: 0;
+    background: rgba(0, 0, 0, .2);
+    position: absolute;
+    border-radius: 3px;
+}
+
+body.ipod #meny ul.app-style:after, body.ipho #meny ul.app-style:after, body.ipod #header ul.app-style:after, body.ipho #header ul.app-style:after, body.ipod #vanster ul.app-style:after, body.ipho #vanster ul.app-style:after {
+    top: 15px;
+}
+
+body.ipod #meny ul.app-style li, body.ipho #meny ul.app-style li, body.ipod #header ul.app-style li, body.ipho #header ul.app-style li, body.ipod #vanster ul.app-style li, body.ipho #vanster ul.app-style li {
+    display: none;
+    margin-bottom: 40px;
+}
+
+ul.app-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background: rgba(255, 255, 255, .95);
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+    list-style: none;
+    overflow: auto;
+}
+
+ul.app-menu li {
+    background-image: none!important;
+}
+
+ul.app-menu li a, ul.app-menu li span {
+    color: #999;
+    line-height: 40px;
+    display: block;
+    font-size: 20px;
+    text-align: center;
+}
+
+ul.app-menu li.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 40px;
+    height: 40px;
+    width: 40px;
+    border-radius: 3px;
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    background: #ccc;
+    color: #fff;
+}
+
+ul.app-menu li.close:before {
+    content: "X"
+}
+
+ul.app-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 0px;
+    transition: max-height ease-in .5s;
+    overflow: hidden;
+}
+
+ul.app-menu ul.open {
+    max-height: 800px;
+}
